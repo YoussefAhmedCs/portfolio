@@ -87,16 +87,16 @@ function Projects() {
                         />
                     </Col>
 
-                    <Col md={4} className="project-card">
-                        <ProjectCard
-                            imgPath={emotion}
-                            isBlog={false}
-                            title="Hand Open/Closed Detection"
-                            description="A real-time computer vision project that detects whether a user's hand is open or closed using a webcam. The system leverages AI-powered hand landmark detection to track hand movements and analyze finger positions, enabling accurate gesture classification in real time."
-                            ghLink="https://github.com/youssef-ahmed-cs/hand-open-closed-detection"
-                            // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
-                        />
-                    </Col>
+                    {/*<Col md={4} className="project-card">*/}
+                    {/*    <ProjectCard*/}
+                    {/*        imgPath={emotion}*/}
+                    {/*        isBlog={false}*/}
+                    {/*        title="Hand Open/Closed Detection"*/}
+                    {/*        description="A real-time computer vision project that detects whether a user's hand is open or closed using a webcam. The system leverages AI-powered hand landmark detection to track hand movements and analyze finger positions, enabling accurate gesture classification in real time."*/}
+                    {/*        ghLink="https://github.com/youssef-ahmed-cs/hand-open-closed-detection"*/}
+                    {/*        // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here*/}
+                    {/*    />*/}
+                    {/*</Col>*/}
                 </Row>
             </Container>
         </Container>
