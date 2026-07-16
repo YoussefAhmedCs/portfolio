@@ -11,6 +11,7 @@ import {
     AiFillStar,
     AiOutlineHome,
     AiOutlineFundProjectionScreen,
+    AiOutlineMail,
     AiOutlineUser,
 } from "react-icons/ai";
 
@@ -85,6 +86,16 @@ function NavBar() {
                         <Nav.Item>
                             <Nav.Link
                                 as={Link}
+                                to="/contact"
+                                onClick={() => updateExpanded(false)}
+                            >
+                                <AiOutlineMail style={{marginBottom: "2px"}}/> Contact
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link
+                                as={Link}
                                 to="/resume"
                                 onClick={() => updateExpanded(false)}
                             >
@@ -93,11 +104,7 @@ function NavBar() {
                         </Nav.Item>
 
                         <Nav.Item>
-                            <Nav.Link
-                                href="https://www.linkedin.com/in/youssef-ahmed-cs"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
+                            <Nav.Link as={Link} to="/blogs" onClick={() => updateExpanded(false)}>
                                 <ImBlog style={{marginBottom: "2px"}}/> Blogs
                             </Nav.Link>
                         </Nav.Item>
