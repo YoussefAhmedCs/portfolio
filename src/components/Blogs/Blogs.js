@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Row, Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import BlogCards from "./BlogCards";
 import blogHero from "../../Assets/Projects/blog.png";
@@ -48,8 +48,7 @@ const blogPosts = [
             "\n" +
             "Instead of typing SSH commands every time, you can save all your connections in one place. Ubuntu, Debian, Red Hat, Windows Server—it doesn't matter. Once a server is configured, connecting is as simple as clicking its name.\n" +
             "\n" +
-            "It's a small improvement, but one that saves time every single day.\n" +
-            "\n"
+            "It's a small improvement, but one that saves time every single day.\n",
         tags: ["SSH", "Linux", "Termius"],
         imgPath: "https://cdn.hackclub.com/019f69b9-f4c3-77ed-b5ad-80a6791a02bb/zaw.jpeg",
     },
@@ -58,7 +57,7 @@ const blogPosts = [
 function Blogs() {
     return (
         <Container fluid className="blog-section">
-            <Particle/>
+            <Particle />
             <Container>
                 <h1 className="project-heading">
                     My <strong className="purple">Blogs</strong>
@@ -70,7 +69,7 @@ function Blogs() {
                 {/*  Static posts, clean layout, and a simple reading experience for visitors.*/}
                 {/*</div>*/}
 
-                <Row style={{justifyContent: "center", paddingBottom: "10px"}}>
+                <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     {blogPosts.map((post) => (
                         <Col key={post.title} md={6} lg={6} className="blog-card">
                             <BlogCards {...post} />
