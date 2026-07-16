@@ -144,7 +144,7 @@ function Contact() {
                                         or talk about projects, services, or anything else.
                                     </p>
 
-                                    <a
+                                    {/* <a
                                         className="contact-info-item contact-info-item-email"
                                         href="mailto:youssef.ahmed.fci@gmail.com"
                                     >
@@ -157,15 +157,15 @@ function Contact() {
                                                 youssef.ahmed.fci@gmail.com
                                             </span>
                                         </span>
-                                    </a>
+                                    </a> */}
                                     <div className="contact-info-item">
                                         <FaWhatsapp/>
                                         <span>+20 127 767 2245</span>
                                     </div>
-                                    <div className="contact-info-item">
+                                    {/* <div className="contact-info-item">
                                         <AiOutlineEnvironment/>
                                         <span>Cairo, Egypt</span>
-                                    </div>
+                                    </div> */}
 
                                     <div className="contact-note">
                                         All messages are sent to me by Telegram bot.

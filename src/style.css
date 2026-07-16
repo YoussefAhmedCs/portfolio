@@ -443,6 +443,11 @@ button:focus {
   padding: 0 !important;
 }
 
+.footer-sponsor-icon {
+  width: 1em;
+  height: 1em;
+}
+
 .blockquote-footer {
   color: #a588c0 !important;
 }

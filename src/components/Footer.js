@@ -33,6 +33,22 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
+                href="https://github.com/sponsors/youssef-ahmed-cs"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Sponsors"
+                title="GitHub Sponsors"
+              >
+                <img
+                  src="https://thesvg.org/icons/github-sponsors/default.svg"
+                  alt="GitHub Sponsors"
+                  className="footer-sponsor-icon"
+                />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
                 href="https://twitter.com/Soumyajit4419"
                 style={{ color: "white" }}
                 target="_blank" 

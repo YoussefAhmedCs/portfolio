@@ -13,7 +13,7 @@ const blogPosts = [
         date: "Jan 2026",
         readTime: "6 min read",
         description:
-            "With Laravel Cloud, you can connect your GitHub repo and deploy your app in just a few minutes. It handles automatic deployments on every push, managed MySQL/PostgreSQL databases, and S3-compatible storage all in one place. It even has a free plan with $5 in credits to get started.",
+            "With Laravel Cloud, you can connect your GitHub repo and deploy your app in just a few minutes. It handles automatic deployments on every push, managed MySQL/PostgreSQL databases, and S3-compatible storage all in one place. It even has a free plan with $5 in credits to get started. With Laravel Cloud, you can connect your GitHub repository and deploy your Laravel application in just a few minutes without worrying about server configuration or infrastructure management.Laravel Cloud provides a fully managed environment built specifically for Laravel applications, offering automatic deployments triggered by every Git push, so your application stays updated with the latest changes effortlessly.",
         tags: ["Laravel", "Deploy", "Cloud"],
         imgPath: "https://cdn.hackclub.com/019f69ad-ffd9-75d3-8a58-1729a104b358/cloud-laravel.jpeg",
     },
@@ -44,11 +44,7 @@ const blogPosts = [
             "\n" +
             "If you work in Cloud Computing, DevOps, or Backend Development, chances are you connect to remote servers almost every day. Whether it's an Ubuntu VM on Azure, an EC2 instance on AWS, or a VPS running Debian, opening a terminal, remembering connection details, and managing multiple servers can become repetitive.One Place for Every Server\n" +
             "\n" +
-            "Termius solves that problem with a clean and modern interface.\n" +
-            "\n" +
-            "Instead of typing SSH commands every time, you can save all your connections in one place. Ubuntu, Debian, Red Hat, Windows Server—it doesn't matter. Once a server is configured, connecting is as simple as clicking its name.\n" +
-            "\n" +
-            "It's a small improvement, but one that saves time every single day.\n",
+            "Termius solves that problem with a clean and modern interface.\n",
         tags: ["SSH", "Linux", "Termius"],
         imgPath: "https://cdn.hackclub.com/019f69b9-f4c3-77ed-b5ad-80a6791a02bb/zaw.jpeg",
     },
