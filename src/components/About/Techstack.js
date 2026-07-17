@@ -11,7 +11,6 @@ import ReactIcon from "../../Assets/TechIcons/React.svg";
 import Java from "../../Assets/TechIcons/Java.svg";
 import Python from "../../Assets/TechIcons/Python.svg";
 import Typescript from "../../Assets/TechIcons/Typescript.svg";
-import Git from "../../Assets/TechIcons/Git.svg";
 // import Firebase from "../../Assets/TechIcons/Firebase.svg";
 import Redis from "../../Assets/TechIcons/Redis.svg";
 import Docker from "../../Assets/TechIcons/Docker.svg";
