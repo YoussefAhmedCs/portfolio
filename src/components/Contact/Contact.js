@@ -1,11 +1,11 @@
-import React, {useState} from "react";
-import {Container, Row, Col} from "react-bootstrap";
-import {AiOutlineMail, AiOutlineEnvironment, AiOutlineLoading3Quarters} from "react-icons/ai";
-import {FaWhatsapp} from "react-icons/fa";
+import React, { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { AiOutlineMail, AiOutlineEnvironment, AiOutlineLoading3Quarters } from "react-icons/ai";
+import { FaWhatsapp } from "react-icons/fa";
 import Particle from "../Particle";
 
 const STATICFORMS_ENDPOINT = "https://api.staticforms.dev/submit";
-const STATICFORMS_API_KEY = 'sf_e7b91bcaba368f2b3945d0e1' || "";
+const STATICFORMS_API_KEY = process.env.REACT_APP_STATICFORMS_API_KEY || "";
 
 const initialForm = {
     name: "",
@@ -48,7 +48,7 @@ function Contact() {
     };
 
     const handleChange = (event) => {
-        const {name, value} = event.target;
+        const { name, value } = event.target;
         setFormData((prev) => ({
             ...prev,
             [name]: value,
@@ -128,7 +128,7 @@ function Contact() {
 
     return (
         <Container fluid className="contact-section">
-            <Particle/>
+            <Particle />
             <Container>
                 <Row className="justify-content-center">
                     <Col lg={10} xl={9}>
@@ -159,7 +159,7 @@ function Contact() {
                                         </span>
                                     </a> */}
                                     <div className="contact-info-item">
-                                        <FaWhatsapp/>
+                                        <FaWhatsapp />
                                         <span>+20 127 767 2245</span>
                                     </div>
                                     {/* <div className="contact-info-item">
@@ -253,7 +253,7 @@ function Contact() {
                                         <button type="submit" className="submit-button" disabled={status.submitting}>
                                             {status.submitting ? (
                                                 <>
-                                                    <AiOutlineLoading3Quarters className="spin-icon"/> Sending...
+                                                    <AiOutlineLoading3Quarters className="spin-icon" /> Sending...
                                                 </>
                                             ) : (
                                                 "Send Message"
