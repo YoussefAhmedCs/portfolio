@@ -12,6 +12,7 @@ const initialForm = {
     email: "",
     subject: "",
     message: "",
+    country: "",
 };
 
 function Contact() {
@@ -69,6 +70,28 @@ function Contact() {
         }
     };
 
+
+    const getUserLocation = async () => {
+        try {
+            const response = await fetch("https://ip.hackclub.com/ip");
+            const data = await response.json();
+
+            return {
+                country: data.country_name || "Unknown",
+                city: data.city_name || "Unknown",
+                ip: data.ip || "",
+            };
+        } catch (error) {
+            console.error("Location error:", error);
+
+            return {
+                country: "Unknown",
+                city: "Unknown",
+                ip: "",
+            };
+        }
+    };
+
     const handleSubmit = async (event) => {
         event.preventDefault();
 
@@ -92,6 +115,9 @@ function Contact() {
         });
 
         try {
+
+            const location = await getUserLocation();
+
             const response = await fetch(STATICFORMS_ENDPOINT, {
                 method: "POST",
                 headers: {
@@ -99,6 +125,11 @@ function Contact() {
                 },
                 body: JSON.stringify({
                     ...formData,
+
+                    country: location.country,
+                    city: location.city,
+                    ip: location.ip,
+
                     apiKey: STATICFORMS_API_KEY,
                     replyTo: formData.email,
                     honeypot: "",
