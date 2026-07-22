@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import BlogCards from "./BlogCards";
-import blogHero from "../../Assets/Projects/blog.png";
-import appImg from "../../Assets/Projects/codeEditor.png";
-import backendImg from "../../Assets/Projects/chatify.png";
-import devImg from "../../Assets/Projects/leaf.png";
+// import blogHero from "../../Assets/Projects/blog.png";
+// import appImg from "../../Assets/Projects/codeEditor.png";
+// import backendImg from "../../Assets/Projects/chatify.png";
+// import devImg from "../../Assets/Projects/leaf.png";
 
 const blogPosts = [
     {
