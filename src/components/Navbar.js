@@ -40,7 +40,7 @@ function NavBar() {
         >
             <Container>
                 <Navbar.Brand href="/" className="d-flex">
-                    <img src={logo} className="img-fluid logo" alt="brand"/>
+                    <img src="https://cdn.hackclub.com/019f8935-68e4-7f20-894f-5acc13122601/logo.png" className="img-fluid logo" alt="brand"/>
                 </Navbar.Brand>
                 <Navbar.Toggle
                     aria-controls="responsive-navbar-nav"
